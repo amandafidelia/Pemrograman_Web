@@ -1,0 +1,176 @@
+body{
+      font-family: sans-serif;
+      background-color: #cccccc;
+      background-image: url("bg.jpg");
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+}
+
+h1{
+      text-align: center;
+      /*ketebalan font*/
+      font-weight: 300;
+      color: #301e01;
+}
+
+.p1{
+      color: white;
+      font-size: 20pt;
+}
+
+.p2{
+      color: white;
+      font-size: 13pt;
+}
+
+.header1{
+      grid-area: header1;
+      background-color: #ad9278;
+      padding: 15px;
+      text-align: center;
+      font-size: 25px;
+      color: black
+      /*untuk button*/
+      border: none;
+      outline: none;
+      cursor: pointer;
+}
+
+.menu{
+      grid-area: menu;
+      background-color: #ad9278;
+}
+
+.menu ul{
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+}
+
+.menu ul li{
+      float: left;
+      list-style-type: none;
+      padding: 10px;
+}
+
+.menu ul a {
+      padding:15px;
+      display:block;
+      font-weight:600;
+      font-size: 15px;
+      color:#fff;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      text-decoration: none;
+}
+ 
+.menu ul a:hover {
+      background:#a8531e;
+}
+
+.article{
+      grid-area: main;
+      color: black;
+      padding: 20px;
+      height: 510px;
+      /*untuk membuat transparan*/
+    background: rgba(0,0,0,.5); 
+}
+
+.footer{
+      grid-area: footer;
+      background-color: #ad9278;
+      padding: 10px;
+      text-align: center;
+      color: black;
+      font-size: 13px;
+}
+
+.container {
+      display: grid;
+      grid-template-areas: 
+      'header1 header1 header1 header1'
+      'menu menu menu menu'
+      'main main main main'
+      'footer footer footer footer';
+      grid-gap : 2px;
+      background-image: url("bg.jpg");
+      background-size: cover;
+
+}
+
+/*untuk sosial media*/
+
+.sosmed{
+      width: 30px;
+      height: 30px;
+
+}
+
+.btn{
+  width: 40px;
+  height: 40px;
+  margin: 12px;
+  border-radius: 30%;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 5px;
+    background: #800000;
+}
+
+.tambah_btn {
+    text-decoration: none;
+    padding: 5px 8px;
+    background: #2E8B57;
+    color: white;
+    border-radius: 3px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.table {
+    font-family: sans-serif;
+    color: white;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #f2f5f7;
+}
+ 
+.table tr th{
+    background: #57ab5a;
+    color: #fff;
+    font-weight: normal;
+}
+ 
+.table, th, td {
+    padding: 5px 12px;
+    text-align: center;
+    font-size: 15px;
+}
+ 
+.table tr:hover {
+    background-color: #cfb68f;
+}
+ 
+.table tr:nth-child(even) {
+    background-color: #cfb68f;
+}
+
+.table2 {
+    font-family: sans-serif;
+    color: white;
+    border-collapse: collapse;
+    width: 600px;
+    height: 200px;
+    background: rgba(0,0,0,.4);
+}
